@@ -12,6 +12,23 @@
   <title>MD Hamim Reza | Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Image crop fix */
+    .photo-placeholder {
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    .profile-photo {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+      max-height: none !important;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
@@ -47,9 +64,9 @@
         </div>
       </div>
       <div class="hero-card reveal">
-       <div class="photo-placeholder">
-  <img src="formal.jpeg" alt="MD Hamim Reza" class="profile-photo">
-</div>
+        <div class="photo-placeholder">
+          <img src="formal.jpeg" alt="MD Hamim Reza" class="profile-photo">
+        </div>
         <div class="status"><span></span> Available for opportunities</div>
       </div>
     </section>
